@@ -1,0 +1,16 @@
+[
+    {
+        "flavor": "",
+        "hook": "",
+        "importance": "",
+        "localHookTemplate": "config/wasteSpatialFlickerLocalHookTemplate.m",
+        "printLocalHookOutput": "1",
+        "name": "wasteSpatialFlicker",
+        "pathPlacement": "append",
+        "subfolder": "code",
+        "toolboxRoot": "",
+        "type": "git",
+        "update": "",
+        "url": ""
+    }    
+]
