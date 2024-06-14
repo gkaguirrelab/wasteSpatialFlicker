@@ -11,19 +11,19 @@
         "toolboxRoot": "",
         "type": "git",
         "update": "",
-        "url": ""
+        "url": "https:\/\/github.com\/gkaguirrelab\/wasteSpatialFlicker"
     },
     {
         "flavor": "",
         "hook": "",
         "importance": "",
         "localHookTemplate": "",
-        "name": "Psychtoolbox-3",
+        "name": "mgl",
         "pathPlacement": "append",
         "subfolder": "",
         "toolboxRoot": "",
-        "type": "include",
+	"type": "git",
         "update": "",
-        "url": ""
+        "url": "https:\/\/github.com\/justingardner\/mgl"
     }
 ]
