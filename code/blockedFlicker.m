@@ -1,4 +1,4 @@
-addpath(genpath('/Users/melanopsin/Documents/MATLAB/toolboxes/mgl'))
+
 mglOpen;
 
 % The script will set the screen to black, with the exception
@@ -14,6 +14,10 @@ mglOpen;
 % Properties of the stimulus
 checkSizeDeg = 2.5;
 flickFreqHz = 8;
+
+% Properties of stimulus timing
+halfCycleDurSecs = 39;
+totalStimCycles = 5;
 
 % Define the physical distance and [width height] of the monitor. These
 % values correspond to a screen that is ~16 degrees wide and 12 degrees
@@ -44,15 +48,9 @@ pause;
 % Set cycles at 1
 cycles = 1;
 
-% Set the total number of cycles
-total_cycles = 2;
-
-% Set duration of stimulus (and black screen)
-stimulusDuration = 5;
-
-while cycles <= total_cycles
+while cycles <= totalStimCycles
     tic;
-    while toc < stimulusDuration
+    while toc < halfCycleDurSecs
         mglBltTexture(tex1,[1 0],-1);
         mglPoints2(0, 0, 0.5, [1 0 0],true);
         mglFlush;
@@ -63,7 +61,7 @@ while cycles <= total_cycles
         mglWaitSecs(stimTimeSecs)
     end
     tic;
-        while toc < stimulusDuration
+        while toc < halfCycleDurSecs
         mglClearScreen(0);
         mglPoints2(0, 0, 0.5, [1 0 0],true);
         mglFlush;
