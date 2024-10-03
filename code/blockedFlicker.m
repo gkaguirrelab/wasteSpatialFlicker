@@ -16,7 +16,7 @@ checkSizeDeg = 2.5;
 flickFreqHz = 8;
 
 % Properties of stimulus timing
-halfCycleDurSecs = 39;
+halfCycleDurSecs = 40;
 totalStimCycles = 5;
 
 % Define the physical distance and [width height] of the monitor. These
@@ -41,9 +41,6 @@ mglFlush;
 
 % Calculate the duration of each stimulus presentation
 stimTimeSecs = 0.5/flickFreqHz;
-
-% Wait for user to press any key to start
-pause;
 
 % Set cycles at 1
 cycles = 1;

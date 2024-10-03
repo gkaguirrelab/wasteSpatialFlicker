@@ -1,4 +1,3 @@
-addpath(genpath('/Users/melanopsin/Documents/MATLAB/toolboxes/mgl'))
 mglOpen;
 
 % The script will set the screen to black, with the exception
@@ -36,11 +35,8 @@ mglFlush;
 % Calculate the duration of each stimulus presentation
 stimTimeSecs = 0.5/flickFreqHz;
 
-% Wait for user to press any key to start
-pause;
-
 % Set stimulus duration in seconds
-stimulusDuration = 3;
+stimulusDuration = (11*60)+30;
 
 % Start timer
 tic;
